@@ -1,0 +1,165 @@
+/* //////////////////////////////////////////////////////////// menu ////////////////////// */
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab';
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #b4ad98;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B3B44;
+    padding: 8px 12px;
+}
+
+.navbar__logo {
+    font-size: 30px;
+    color: black;
+}
+
+.navbar__logo i {
+    color: black;
+    padding-left: 50px;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    padding-left: 650px; 
+}
+
+.navbar__menu li {
+    padding: 8px 12px;
+}
+
+.navbar__menu li:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.navbar__toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: #569DF6;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar__toogleBtn {
+        display: block;
+    }
+
+    .navbar__menu.active,
+    .navbar__icons.active {
+        display: flex;
+    }
+}
+
+
+/* //////////////////////////////////////////////////////////// block ////////////////////// */
+
+nav ul {
+    float: center;
+}
+
+nav ul li {
+    float: center;
+    list-style: none;
+    position: relative;
+    padding: 4px 8px;
+}
+
+nav ul li a {
+    display: block;
+    font-family: 'Roboto Slab';
+    color: #b4ad98;
+    font-size: 23px;
+    padding: 4px 8px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 67px;
+    border-radius: 4px;
+}
+
+nav ul li ul li a {
+    padding: 8px 6px;
+    position: relative;
+}
+
+nav ul li ul li a:hover {
+    border-radius: 4px;
+    background-color: white;
+}
+
+
+/* //////////////////////////////////////////////////////////// the greate gatsby, image and text ////////////////////// */
+
+h1 {
+    text-align: center;
+    font-size: 130px;
+    font-family: 'Abril Fatface';
+    font-weight: lighter;
+    color: #F0A400;
+}
+
+img {
+    position: absolute;
+    margin-left: 580px;
+    margin-right: -700px;
+    margin-top: 600px;
+    width: 30%;
+}
+
+p {
+    position: absolute;
+    margin-top: 1400px;
+    margin-left: 500px;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: white;
+}

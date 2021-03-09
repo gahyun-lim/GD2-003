@@ -1,0 +1,16 @@
+#container{
+    margin: auto;
+    width: 75%;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #c7bf9c;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Roboto Slab';
+}
